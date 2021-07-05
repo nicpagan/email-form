@@ -5,8 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    
+    <main>
+        <header>
+            <h1>Ice Cream Order Form</h1>
+        </header>
+
+        <form action="">
+            <!-- name text input -->
+            <div>
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name" required>
+            </div>
+            <!-- email text input -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            </div>
+
+            <!-- flavor choices -->
+            <div>
+            <h2>Choose your ice cream flavor(s):</h2>
+            <div>
+                <input name="chocolate" type="checkbox" id="chocolate" />
+                <label for="chocolate">Chocolate</label>
+            </div>
+            <div>
+                <input name="vanilla" type="checkbox" id="vanilla" />
+                <label for="vanilla">Vanilla</label>
+            </div>
+            <div>
+                <input name="mint-choco-chip" type="checkbox" id="mint-choco-chip" />
+                <label for="mint-choco-chip">Mint Chocolate Chip</label>
+            </div>
+            <div>
+                <input name="cookie-dough" type="checkbox" id="cookie-dough" />
+                <label for="cookie-dough">Cookie Dough</label>
+                </div>
+                <div>
+                <input name="pb-brownie" type="checkbox" id="pb-brownie" />
+                <label for="pb-brownie">Peanut Butter Brownie</label>
+                </div>
+                <div>
+                <input name="moose-tracks" type="checkbox" id="moose-tracks" />
+                <label for="moose-tracks">Moose Tracks</label>
+                </div>
+            
+            <!-- scoop selection -->
+            <div>
+                <h2>Choose amount of scoops:</h2>
+                <select name="scoops" size="1">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+                
+
+            <!-- serving-selection -->
+            <div>
+                <h2>Choose your ice cream vessel:</h2>
+                <div>
+                  <input id="cup" name="serving-selection" type="radio" value="cup" />
+                  <label for="cup">Cup</label>
+                </div>
+                <div>
+                  <input id="sugar-cone" name="serving-selection" type="radio" value="sugar-cone" />
+                  <label for="sugar-cone">Sugar-cone</label>
+                </div>
+                <div>
+                  <input id="waffle-cone" name="serving-selection" type="radio" value="waffle-cone" />
+                  <label for="waffle-cone">Waffle-cone</label>
+                </div>
+              </div>
+            <!-- Your message textbox -->
+            <div>
+                <label for="form-message">Special Requests:</label>
+                <textarea name="message" id="form-message" maxlength="200" placeholder="Write your message here"></textarea>
+            </div>
+
+            <!-- submit button -->
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+            
+        </form>
+    </main>
 </body>
 </html>
